@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
-import { Button, Icon, Header, Grid } from 'semantic-ui-react';
+import { Button, Icon, Header, Grid, Image } from 'semantic-ui-react';
 
 const styles = {
-  buttonStyle: {
+  buttonPadding: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     padding: '10px 12px',
     cursor: 'pointer'
+  },
+  buttonSize: {
+    padding: '14px 80px'
   },
   centeredButtons: {
     display: 'flex',
@@ -17,6 +20,9 @@ const styles = {
     border: '1px solid green'
   }
 };
+
+const src =
+  'https://res.cloudinary.com/dgver7dmh/image/upload/v1567762749/Cajon_Pic_1_wivbjd.jpg';
 
 export class Home extends Component {
   render() {
@@ -30,42 +36,41 @@ export class Home extends Component {
             centered
             style={{ margin: '0 auto' }}
           >
-            <Header style={{ padding: '20px' }} as='h1' textAlign='center'>
-              Umar Mausoof
+            <Header
+              style={{ paddingTop: '20px' }}
+              size='huge'
+              textAlign='center'
+            >
+              <Image src={src} fluid circular /> Umar Mausoof
             </Header>
-            <div style={styles.buttonStyle}>
+            <div style={styles.buttonPadding}>
               <a href='https:/google.com'>
-                <Button
-                  size='large'
-                  style={{ padding: '10px 24px' }}
-                  icon
-                  color='linkedin'
-                >
+                <Button style={styles.buttonSize} icon color='linkedin'>
                   <Icon name='linkedin' />
                   LinkedIn
                 </Button>
               </a>
             </div>
-            <div style={styles.buttonStyle}>
+            <div style={styles.buttonPadding}>
               <a href='https:/google.com'>
-                <Button icon color='linkedin'>
+                <Button style={styles.buttonSize} icon color='linkedin'>
                   <Icon name='linkedin' />
                   LinkedIn
                 </Button>
               </a>
             </div>
 
-            <div style={styles.buttonStyle}>
+            <div style={styles.buttonPadding}>
               <a href='https:/google.com'>
-                <Button icon color='linkedin'>
+                <Button style={styles.buttonSize} icon color='linkedin'>
                   <Icon name='linkedin' />
                   LinkedIn
                 </Button>
               </a>
             </div>
-            <div style={styles.buttonStyle}>
+            <div style={styles.buttonPadding}>
               <a href='https:/google.com'>
-                <Button icon color='linkedin'>
+                <Button style={styles.buttonSize} icon color='linkedin'>
                   <Icon name='linkedin' />
                   LinkedIn
                 </Button>
@@ -81,35 +86,35 @@ export class Home extends Component {
             centered
             style={{ margin: '0 auto' }}
           >
-            <div style={styles.buttonStyle}>
+            <div style={styles.buttonPadding}>
               <a href='https:/google.com'>
-                <Button icon color='linkedin'>
+                <Button style={styles.buttonSize} icon color='linkedin'>
                   <Icon name='linkedin' />
                   LinkedIn
                 </Button>
               </a>
             </div>
 
-            <div style={styles.buttonStyle}>
+            <div style={styles.buttonPadding}>
               <a href='https:/google.com'>
-                <Button icon color='linkedin'>
+                <Button style={styles.buttonSize} icon color='linkedin'>
                   <Icon name='linkedin' />
                   LinkedIn
                 </Button>
               </a>
             </div>
 
-            <div style={styles.buttonStyle}>
+            <div style={styles.buttonPadding}>
               <a href='https:/google.com'>
-                <Button icon color='linkedin'>
+                <Button style={styles.buttonSize} icon color='linkedin'>
                   <Icon name='linkedin' />
                   LinkedIn
                 </Button>
               </a>
             </div>
-            <div style={styles.buttonStyle}>
+            <div style={styles.buttonPadding}>
               <a href='https:/google.com'>
-                <Button icon color='linkedin'>
+                <Button style={styles.buttonSize} icon color='linkedin'>
                   <Icon name='linkedin' />
                   LinkedIn
                 </Button>
