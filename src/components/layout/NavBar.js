@@ -20,7 +20,7 @@ export class Navbar extends Component {
           <Link to='/bio'>
             <Menu.Item name='bio' />
           </Link>
-          <Link to='/'>
+          <Link to='/resume'>
             <Menu.Item name='resume' />
           </Link>
         </Menu>
