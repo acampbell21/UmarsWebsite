@@ -6,8 +6,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var path = require('path');
 
-var index = require('./routes/index');
 const app = express();
+var index = require('./routes/index');
 
 app.use(function(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
@@ -57,7 +57,7 @@ app.use('/', index);
 // Serve static assets in production
 if (process.env.NODE_ENV === 'production') {
   // Set static folder
-  app.use('/static', express.static(path.join(__dirname, 'client/build')));
+  app.use(express.static('/client/build'));
 
   app.get('*', (req, res) =>
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
