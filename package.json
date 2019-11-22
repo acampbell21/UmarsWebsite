@@ -2,23 +2,30 @@
   "name": "umarwebsite",
   "version": "0.1.0",
   "private": true,
+  "description": "Umar's Website",
+  "main": "Server.js",
   "dependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-redirect": "^1.0.0",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "3.1.1",
-    "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.88.0"
+    "axios": "^0.19.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "config": "^3.2.4",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "express-validator": "^6.2.0",
+    "jade": "^1.11.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.11",
+    "morgan": "^1.9.1",
+    "nodemailer": "^6.3.1",
+    "pug": "^2.0.4",
+    "serve-favicon": "^2.5.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "clientinstall": "npm install --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "browserslist": {
     "production": [
@@ -31,5 +38,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "nodemon": "^1.19.4"
   }
 }
