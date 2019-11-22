@@ -19,6 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "http://alexcampbell21.github.io/UmarsWebsite",
   "eslintConfig": {
     "extends": "react-app"
   },
