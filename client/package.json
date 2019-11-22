@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "./umarswebsite",
+  "homepage": ".",
   "eslintConfig": {
     "extends": "react-app"
   },
