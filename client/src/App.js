@@ -11,7 +11,7 @@ import 'semantic-ui-css/semantic.min.css';
 class App extends Component {
   render() {
     return (
-      <Router basename='/umarswebsite'>
+      <Router>
         <div>
           <NavBar />
           <Switch>
